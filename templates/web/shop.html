@@ -29,46 +29,26 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-xl-5 col-md-4 col-sm-6  mt--10 mt-sm--0">
-							<span class="toolbar-status">
-								Showing 1 to 9 of 14 (2 Pages)
-							</span>
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-6  mt--10 mt-md--0">
+						
+						
+					<div class="col-lg-2 col-md-2 col-sm-6  mt--10 mt-md--0">
+						<div class="sorting-selection">
+							
 							<div class="sorting-selection">
-								<span>Show:</span>
-								<select class="form-control nice-select sort-select">
-									<option value="" selected="selected">3</option>
-									<option value="">9</option>
-									<option value="">5</option>
-									<option value="">10</option>
-									<option value="">12</option>
-								</select>
+								<form method="GET">
+									<select class="form-control nice-select sort-select mr-0" name="price">
+										<option value="" selected="selected">Price Sorting</option>
+										<option value="1-100">1 to 100</option>
+										<option value="100-250">100 to 250</option>
+										<option value="250-400">250 to 400</option>
+										<option value="400-500">400 to 500</option>
+										<option value="500-600">500 to 600</option>
+										
+									</select>
+									<button type="submit">Filter</button>
+								</form>
 							</div>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mt--10 mt-md--0 ">
-							<div class="sorting-selection">
-								<span>Sort By:</span>
-								<select class="form-control nice-select sort-select mr-0">
-									<option value="" selected="selected">Default Sorting</option>
-									<option value="">Sort
-										By:Name (A - Z)</option>
-									<option value="">Sort
-										By:Name (Z - A)</option>
-									<option value="">Sort
-										By:Price (Low &gt; High)</option>
-									<option value="">Sort
-										By:Price (High &gt; Low)</option>
-									<option value="">Sort
-										By:Rating (Highest)</option>
-									<option value="">Sort
-										By:Rating (Lowest)</option>
-									<option value="">Sort
-										By:Model (A - Z)</option>
-									<option value="">Sort
-										By:Model (Z - A)</option>
-								</select>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -101,32 +81,6 @@
 									<option value="">10</option>
 									<option value="">12</option>
 								</select>
-							</div>
-						</div>
-
-						<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mt--10 mt-md--0">
-							<div class="sorting-selection">
-								<span>Sort By:</span>
-								<form action="{% url 'web:shop' %}" method="get">
-									<div class="sorting-selection">
-										<span>Sort By:</span>
-										<form action="{% url 'web:shop' %}" method="get">
-											<select class="form-control nice-select sort-select mr-0" name="sort_by">
-												<option value="" selected="selected">Default Sorting</option>
-												<option value="name_az">Sort By: Name (A - Z)</option>
-												<option value="name_za">Sort By: Name (Z - A)</option>
-												<option value="price_low_high">Sort By: Price (Low &gt; High)</option>
-												<option value="price_high_low">Sort By: Price (High &gt; Low)</option>
-												<option value="rating_highest">Sort By: Rating (Highest)</option>
-												<option value="rating_lowest">Sort By: Rating (Lowest)</option>
-												<option value="model_az">Sort By: Model (A - Z)</option>
-												<option value="model_za">Sort By: Model (Z - A)</option>
-											</select>
-											<button type="submit" class="btn btn-primary">Sort</button>
-										</form>
-									</div>
-									<button type="submit" class="btn btn-primary">Sort</button>
-								</form>
 							</div>
 						</div>
 						
@@ -183,52 +137,6 @@
 					</div>
 	
 				</div>
-			
-	
 		</main>
 	</div>
-	<!--=================================
-  Brands Slider
-===================================== -->
-	<section class="section-margin">
-		<h2 class="sr-only">Brand Slider</h2>
-		<div class="container">
-			<div class="brand-slider sb-slick-slider border-top border-bottom" data-slick-setting='{
-                                            "autoplay": true,
-                                            "autoplaySpeed": 8000,
-                                            "slidesToShow": 6
-                                            }' data-slick-responsive='[
-                {"breakpoint":992, "settings": {"slidesToShow": 4} },
-                {"breakpoint":768, "settings": {"slidesToShow": 3} },
-                {"breakpoint":575, "settings": {"slidesToShow": 3} },
-                {"breakpoint":480, "settings": {"slidesToShow": 2} },
-                {"breakpoint":320, "settings": {"slidesToShow": 1} }
-            ]'>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-1.jpg' %}" alt="">
-				</div>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-2.jpg' %}" alt="">
-				</div>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-3.jpg' %}" alt="">
-				</div>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-4.jpg' %}" alt="">
-				</div>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-5.jpg' %}" alt="">
-				</div>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-6.jpg' %}" alt="">
-				</div>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-1.jpg' %}" alt="">
-				</div>
-				<div class="single-slide">
-					<img src="{% static 'web/image/others/brand-2.jpg' %}" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
 {% endblock %}

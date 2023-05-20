@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 import json
 from .models import Products
 
-# from .forms import LoginForm, RegistrationForm
+
 
 def index(request):
     context = {"is_index": True}
@@ -16,15 +16,16 @@ def index(request):
 def shop(request):
     products = Products.objects.all()
 
-    # Get the current sort order
-    sort_order = request.GET.get("sort_by", "")
+    price_range = request.GET.get('price', '') 
+    language = request.GET.get('language', '')  
 
-    # Sort the products by the current sort order
-    if sort_order == "price_low_high":
-        products = products.order_by("price")
-    elif sort_order == "price_high_low":
-        products = products.order_by("-price")
 
+    if language:
+        products = products.filter(language=language) 
+   
+    if price_range:
+        min_price, max_price = map(int, price_range.split('-'))  
+        products = products.filter(price__gte=min_price, price__lte=max_price)  
 
     context = {
         "is_shop": True,

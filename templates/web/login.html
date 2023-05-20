@@ -19,8 +19,6 @@
 		<main class="page-section inner-page-sec-padding-bottom ">
 			<div class="container">
 				<div class="row">
-					{% comment %} <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb--30 mb-lg--0"> {% endcomment %}
-						<!-- Login Form s-->
 		
 					<div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
 						<form action="#" method="post">
@@ -40,10 +38,9 @@
 										<input class="mb-0 form-control" type="password" name="password" id="password" placeholder="Enter your password">
 									</div>
 									<div class="col-md-12">
-										{% comment %} <a href="#" class="btn btn-outlined">Login</a> {% endcomment %}
 										<button type="submit" class="btn btn-outlined">Log in</button>
-
-										{% comment %} <p><a href="{% url 'web:register' %}">new user</a></p> {% endcomment %}
+										<br>
+										<h6><a href="{% url 'web:register' %}">new user register</a></h6> 
 									</div>
 								</div>
 							</div>

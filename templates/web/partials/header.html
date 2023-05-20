@@ -32,22 +32,8 @@
                                     <a href=" {% url 'web:shop' %}">shop <i
                                            ></i></a>
                                 </li>
-                                <!-- Pages -->
-                                <li class="menu-item has-children">
-                                    <a href="">Pages <i
-                                            class="fas fa-chevron-down dropdown-arrow"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="compare.html">Compare</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="{% url 'web:login' %}">Login Register</a></li>
-                                        <li><a href="my-account.html">My Account</a></li>
-                                        <li><a href="order-complete.html">Order Complete</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="contact-2.html">contact 02</a></li>
-                                    </ul>
-                                </li>
+                                
+                                
                                 <!-- Blog -->
                                 <li class="menu-item has-children mega-menu">
                                     <a href="">Blog <i></i></a>
@@ -67,111 +53,42 @@
                     <div class="col-lg-3">
                         <nav class="category-nav   ">
                             <div>
-                                <a href="" class="category-trigger"><i
-                                        class="fa fa-bars"></i>Browse
+                                <a href="javascript:void(0)" class="category-trigger"><i
+                                        class="fa fa-bars"></i>Sort
                                     categories</a>
                                 <ul class="category-menu">
                                     <li class="cat-item has-children">
-                                        <a href="#">Arts & Photography</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Bags & Cases</a></li>
-                                            <li><a href="#">Binoculars & Scopes</a></li>
-                                            <li><a href="#">Digital Cameras</a></li>
-                                            <li><a href="#">Film Photography</a></li>
-                                            <li><a href="#">Lighting & Studio</a></li>
-                                        </ul>
+                                       
+                                        <div class="sorting-selection">
+                                            <form method="GET">
+                                                <select class="form-control nice-select sort-select mr-0" name="language">
+                                                    <option value="" selected="selected">Language Sorting</option>
+                                                    <option value="Malayalam">Malayalam</option>
+                                                    <option value="English">English</option>
+                                                </select>
+                                                <button type="submit">Filter</button>
+                                            </form>
+                                        </div>
                                     </li>
-                                    <li class="cat-item has-children mega-menu"><a href="#">Biographies</a>
-                                        <ul class="sub-menu">
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Business & Money</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Calendars</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Children's Books</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Comics</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item"><a href="#">Perfomance Filters</a></li>
-                                    <li class="cat-item has-children"><a href="#">Cookbooks</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item "><a href="#">Accessories</a></li>
-                                    <li class="cat-item "><a href="#">Education</a></li>
-                                    <li class="cat-item hidden-menu-item"><a href="#">Indoor Living</a></li>
-                                    <li class="cat-item"><a href="#" class="js-expand-hidden-menu">More
-                                            Categories</a></li>
-                                </ul>
+                                    <ul class="category-menu">
+                                        <li class="cat-item has-children">
+                                            
+                                            <div class="sorting-selection">
+                                                <form method="GET">
+                                                    <select class="form-control nice-select sort-select mr-0" name="price">
+                                                        <option value="" selected="selected">Price Sorting</option>
+                                                        <option value="1-100">1 to 100</option>
+                                                        <option value="100-250">100 to 250</option>
+                                                        <option value="250-400">250 to 400</option>
+                                                        <option value="400-500">400 to 500</option>
+                                                        <option value="500-600">500 to 600</option>
+                                                        
+                                                    </select>
+                                                    <button type="submit">Filter</button>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    
                             </div>
                         </nav>
                     </div>
@@ -186,9 +103,9 @@
                             <div class="cart-widget">
                                 <div class="login-block">
                                     <a href="{% url 'web:login' %}" class="font-weight-bold">Login</a> <br>
-                                    <span>or</span><a href="{% url 'web:login' %}">Register</a>
+                                    <span>or</span><a href="{% url 'web:register' %}">Register</a>
                                 </div>
-                                <div class="cart-block">
+                                 <div class="cart-block">
                                     <div class="cart-total">
                                         <span class="text-number">
                                             1
@@ -201,31 +118,6 @@
                                             <i class="fas fa-chevron-down"></i>
                                         </span>
                                     </div>
-                                    <div class="cart-dropdown-block">
-                                        <div class=" single-cart-block ">
-                                            <div class="cart-product">
-                                                <a href="product-details.html" class="image">
-                                                    <img src="image/products/cart-product-1.jpg" alt="">
-                                                </a>
-                                                <div class="content">
-                                                    <h3 class="title"><a href="product-details.html">Kodak PIXPRO
-                                                            Astro Zoom AZ421 16 MP</a>
-                                                    </h3>
-                                                    <p class="price"><span class="qty">1 ×</span> £87.34</p>
-                                                    <button class="cross-btn"><i class="fas fa-times"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" single-cart-block ">
-                                            <div class="btn-block">
-                                                <a href="cart.html" class="btn">View Cart <i
-                                                        class="fas fa-chevron-right"></i></a>
-                                                <a href="checkout.html" class="btn btn--primary">Check Out <i
-                                                        class="fas fa-chevron-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -248,108 +140,7 @@
                                 <a href="" class="category-trigger"><i
                                         class="fa fa-bars"></i>Browse
                                     categories</a>
-                                <ul class="category-menu">
-                                    <li class="cat-item has-children">
-                                        <a href="#">Arts & Photography</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Bags & Cases</a></li>
-                                            <li><a href="#">Binoculars & Scopes</a></li>
-                                            <li><a href="#">Digital Cameras</a></li>
-                                            <li><a href="#">Film Photography</a></li>
-                                            <li><a href="#">Lighting & Studio</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children mega-menu"><a href="#">Biographies</a>
-                                        <ul class="sub-menu">
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="single-block">
-                                                <h3 class="title">WHEEL SIMULATORS</h3>
-                                                <ul>
-                                                    <li><a href="#">Bags & Cases</a></li>
-                                                    <li><a href="#">Binoculars & Scopes</a></li>
-                                                    <li><a href="#">Digital Cameras</a></li>
-                                                    <li><a href="#">Film Photography</a></li>
-                                                    <li><a href="#">Lighting & Studio</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Business & Money</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Calendars</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Children's Books</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item has-children"><a href="#">Comics</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item"><a href="#">Perfomance Filters</a></li>
-                                    <li class="cat-item has-children"><a href="#">Cookbooks</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Brake Tools</a></li>
-                                            <li><a href="#">Driveshafts</a></li>
-                                            <li><a href="#">Emergency Brake</a></li>
-                                            <li><a href="#">Spools</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="cat-item "><a href="#">Accessories</a></li>
-                                    <li class="cat-item "><a href="#">Education</a></li>
-                                    <li class="cat-item hidden-menu-item"><a href="#">Indoor Living</a></li>
-                                    <li class="cat-item"><a href="#" class="js-expand-hidden-menu">More
-                                            Categories</a></li>
-                                </ul>
+                               
                             </div>
                         </nav>
                     </div>
@@ -482,22 +273,7 @@
                             <li class="menu-item has-children mega-menu">
                                 <a href=" {% url 'web:shop' %}">shop <i></i></a>
                             </li>
-                            <!-- Pages -->
-                            <li class="menu-item has-children">
-                                <a href="">Pages <i
-                                        class="fas fa-chevron-down dropdown-arrow"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="compare.html">Compare</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                    <li><a href="{% url 'web:login' %}">Login Register</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                    <li><a href="order-complete.html">Order Complete</a></li>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="contact-2.html">contact 02</a></li>
-                                </ul>
-                            </li>
+
                             <!-- Blog -->
                             <li class="menu-item has-children mega-menu">
                                 <a href="">Blog <i></i></a>
