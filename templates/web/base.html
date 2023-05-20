@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Use Minified Plugins Version For Fast Page Load -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/plugins.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/main.css' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/image/favicon.ico' %}">
+</head>
+<body>
+		
+
+        {% include 'web/partials/header.html' %}
+  
+        {% block content %}
+        
+        {% endblock %}
+        
+        {% include 'web/partials/footer.html' %}
+
+  <!-- Use Minified Plugins Version For Fast Page Load -->
+  <script src="{% static 'web/js/plugins.js' %}"></script>
+  <script src="{% static 'web/js/ajax-mail.js' %}"></script>
+  <script src="{% static 'web/js/custom.js' %}"></script>
+</body>
+
+</html>
